@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222222; 
+    }
+
+.logo {
+    position: absolute;
+    height: 80px;
+}
+
+p {
+    font-family: 'Roboto', cursive;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #fff;
+    }
+
+
+
+.carousel {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-cell {
+    position: absolute;
+    transition: transform 500ms ease-out, left 500ms ease-out, opacity 500ms, z-index 0s;
+}
+
+
+
+h1 {
+font-family: 'Roboto';
+text-transform: uppercase;
+font-weight: normal;
+letter-spacing: 3px;
+font-size: 1.5rem;
+}
+
+
+p {
+font-family: 'Roboto', cursive;
+font-size: 0.8rem;
+font-weight: 400;
+}
+
+i {
+color: #ffa500;
+font-size: 3rem;    
+
+}
+
+*:focus{
+    outline: none;
+ }
+ 
+ button {
+ 
+ background:none;
+ border:none;
+transition: 210ms ease-out;
+ 
+ }
+
+
+.personCard img{
+width: 100%;
+border-radius: 20px;
+}
+
+
+.button-container {
+
+text-align: center;
+
+}
+
+.scene {
+    width: 350px;
+    height: 467px;
+    perspective: 800px;
+    margin: 50px auto auto auto;
+    
+}
+
+.personCard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 600ms ease-out;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    backface-visibility: hidden;
+}
+
+.cardFront {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.384);
+    transition: all 0.3s ease-in-out;
+  }
+
+.cardFront:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.cardBack {
+    width: 100%;
+    height: 100%;
+    transform: rotateY( 180deg );
+    background: rgb(10, 18, 22);  
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 0px 20px;
+    box-shadow: 4px 2px 10px black;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.cardBack:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.personCard.is-flipped {
+    transform: rotateY(180deg) rotateZ(3deg);
+}
+
+span {
+    color: orange;
+    font-family: 'Roboto', cursive;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.prevHidden {
+    opacity: 0;
+    left: 0%;
+    transform: translateY(3%) translateX(-50%) scale(0.4);
+}
+
+.prevSecond {
+    opacity: 0.5;
+    z-index: 4;
+    left: 15%;
+    transform: translateY(3%) translateX(-50%) scale(0.6);
+}
+
+.prev {
+    z-index: 5;
+    left: 29%;
+    transform: translateY(3%) translateX(-50%) scale(0.8);
+}
+
+.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+
+.next {
+    z-index: 5;
+    left: 71%;
+    transform: translateY(3%) translateX(-50%) scale(0.8);
+}
+
+.nextSecond {
+    opacity: 0.5;
+    z-index: 4;
+    left: 85%;
+    transform: translateY(3%) translateX(-50%) scale(0.6);
+}
+
+.nextHidden {
+    opacity: 0;
+    left: 100%;
+    transform: translateY(3%) translateX(-50%) scale(0.4);
+}
+
+.name-box {
+    background: #FF8008;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 85%;
+    font-size: 1.2rem;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #222222;
+    transform: translateY(-110px);
+    padding: 12px 0px;
+    font-family: 'Roboto', cursive;  
+    font-weight: 300; 
+    letter-spacing: 8px;
+    align-self: flex-start;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.384);
+}
