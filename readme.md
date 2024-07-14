@@ -17,7 +17,3 @@ https://avollrath.github.io/Integrify-Image-Gallery/
 # Author
 
 #### Julia Shumeyko, Kunjan Ghimire, André Vollrath
-
-# Preview 
-
-![](preview.gif)
