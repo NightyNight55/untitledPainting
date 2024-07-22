@@ -142,6 +142,10 @@ const peopleObject = [
     {
         frontImageSrc: '5-3正面.png',
         backImageSrc: '5-3背面.png'
+    },
+    {
+        frontImageSrc: 'S.png',
+        backImageSrc: 'S.png'
     }
 ];
 
