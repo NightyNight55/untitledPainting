@@ -9,6 +9,14 @@
 
 https://nightynight55.github.io/untitledPainting/
 
+# 主架構前導片
+
+https://www.youtube.com/watch?v=Dtus5nNnrCE
+
+# 結局影片
+
+https://www.youtube.com/watch?v=zU45KtDH7X8
+
 # 補充完整劇情網頁
 
 https://pse.is/692xxr
